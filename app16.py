@@ -263,7 +263,7 @@ with tab[1]:
             <li class="pertanyaan"><b>Artikan kata-kata/kelompok kata berikutnya</b>
                 <ol type="a">
                     <li class="pertanyaan1">Hutan Lindung (baris 2)  =  <input class="pertanyaan3" type="text"> </li>
-                    <li class="pertanyaan1">Mengendap-endap (baris 3)  = = <input class="pertanyaan3" type="text"> </li>
+                    <li class="pertanyaan1">Mengendap-endap (baris 3)  =  <input class="pertanyaan3" type="text"> </li>
                     <li class="pertanyaan1">Dihantam (baris 9)  = <input class="pertanyaan3" type="text"> </li>
                     <li class="pertanyaan1">Menguliti (baris 14)  =  <input class="pertanyaan3" type="text"> </li>
                     <li class="pertanyaan1">Perburuan (baris 23) = <input class="pertanyaan3" type="text"></li>
