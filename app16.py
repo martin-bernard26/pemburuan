@@ -382,7 +382,7 @@ with tab[1]:
                     .catch((error) => {{
                     console.error("Error adding data:", error);
                 }});
-                set(ref(db, 'hemat_air/' + nama+'/soal'), {{ 
+                set(ref(db, 'pemburuan/' + nama+'/soal'), {{ 
                     soal1a:soal1[0].value,
                     soal1b:soal1[1].value,
                     soal1c:soal1[2].value,
