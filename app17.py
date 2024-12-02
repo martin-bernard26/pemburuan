@@ -609,4 +609,4 @@ with tab[2]:
 </body>
 </html>
     '''
-    st.components.v1.html(tulisan_html5,width=1000,height=13000)
+    st.components.v1.html(tulisan_html5,width=1000,height=6000)
