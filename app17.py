@@ -26,8 +26,8 @@ tulisan_css='''
 </style>
 '''
 st.markdown(tulisan_css,unsafe_allow_html=True)
-
-tab = st.tabs(["Ayo Membaca","Latihan"])
+st.image("https://res.cloudinary.com/ikip-siliwangi/image/upload/v1733135017/fives_epdalm.png",width=200)
+tab = st.tabs(["Ayo Membaca","Latihan","Soal Numerasi"])
 with tab[0]:
 # Judul dengan animasi warna
     st.markdown("""
@@ -311,7 +311,7 @@ with tab[1]:
                 var soal1 = document.getElementsByClassName("pertanyaan3")
                 var soal2 = document.getElementsByClassName("pertanyaan5")
                 var soal3 = document.getElementsByClassName("pertanyaan4")
-                set(ref(db, 'pemburuan_hewan/' + nama), {{ 
+                set(ref(db, 'sayuran/' + nama), {{ 
                     nama:nama,
                     kelas:kelas,
                     ns:ns,
@@ -359,3 +359,254 @@ with tab[1]:
 </html>
 '''
         st.components.v1.html(tulisan_html3,width=1000,height=13000)
+with tab[2]:
+    tulisan_html5='''
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding:10px;
+            background-color:lightgray
+        }
+        .judul{
+            font-family:"bauhaus 93";
+            font-size:20px;
+            font-weight:bold;
+        }
+        .bagian{
+            font-size:30px;
+            color:blue;
+            text-shadow:2px 2px 2px red;
+        }
+        .bagian1{
+            margin:3px;
+            color:green;
+            font-weight:bold;
+        }
+        .ident{
+            border: 2px solid black;
+            border-radius:5px;
+            width:300px;
+            height:30px;
+            box-shadow:2px 2px 2px 2px orange;
+        }
+        #identitas{
+            padding:5px;
+            border:2px solid black;
+            border-radius:3px;
+            box-shadow:2px 2px 2px 2px yellow;
+            margin:5px;
+            background-color:mistyrose
+        }
+        #petunjuk{
+            border: 2px solid black;
+            border-radius:5px;
+            background-color:cyan;
+            padding:5px;
+            font-size:18px;
+            text-align:justify;
+        }
+        .bagian2{
+            color:brown;
+            font-weight:bold;
+            font-size:20px;
+            margin:5px;
+        }
+        ul li{
+            margin:3px;
+            font-size:20px;
+        }
+        .bagian3{
+            border:3px solid black;
+            border-radius:10px;
+            box-shadow:2px 2px 2px 2px green;
+        }
+        #kirim1{
+            font-family:broadway;
+            font-size:20px;
+            background-color:green;
+            color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="judul bagian">Tugas Numerasi: Pentingnya Sayur dan Buah untuk Kesehatan</div>
+    <div id="identitas">
+        <div class="bagian1" id="nama">Nama: <input class="ident" type="text"></div>
+        <div class="bagian1" id="kelas">Kelas: <input class="ident" type="text"></div>
+    </div>
+    <div class="judul">Petunjuk</div>
+    <div id="petunjuk">Bacalah teks <b><i>“Sayur dan Buah Bukan Sekadar Pelengkap Makanan” </i></b>
+        untuk memahami pentingnya sayur dan buah dalam kehidupan kita. Gunakan informasi dari teks tersebut 
+        untuk menjawab soal-soal numerasi berikut. Tuliskan jawabanmu dengan jelas!
+    </div>
+    <div class="judul">Soal-soal:</div>
+    <div>
+        <ol>
+            <li><div class="bagian2">Perbandingan Konsumsi Sayur dan Buah di Indonesia</div>
+                <ul type="circle">
+                <li>Berdasarkan data pada teks, konsumsi sayur masyarakat Indonesia adalah 
+                    40,35 kg per tahun, sedangkan buah adalah 34,55 kg per tahun
+                    <ul type="square">
+                        <li>Berapakah total konsumsi sayur dan buah per tahun di Indonesia?</li>
+                        <div><textarea class="bagian3" id="jawaban1a" rows="10" cols="80"></textarea></div>
+                        <li>Hitung perbedaan konsumsi sayur dan buah per tahun di Indonesia.</li>
+                        <div><textarea class="bagian3" id="jawaban1b" rows="10" cols="80"></textarea></div>
+                    </ul>
+                </li>
+                </ul>
+            </li>
+            <li><div class="bagian2">Kebutuhan Sayur dan Buah Menurut Rekomendasi WHO</div>
+                <ul type="circle">
+                    <li>Organisasi Kesehatan Dunia (WHO) merekomendasikan konsumsi 400 gram 
+                        sayur dan buah per hari.</li>
+                        <ul type="square">
+                            <li>Jika 400 gram per hari dikonsumsi selama setahun (365 hari), 
+                                berapa kilogram sayur dan buah yang dibutuhkan seseorang dalam setahun?</li>
+                            <div><textarea class="bagian3" id="jawaban2a" rows="10" cols="80"></textarea></div>
+                            <li>Bandingkan angka tersebut dengan konsumsi rata-rata di Indonesia. 
+                                Berapa kilogram tambahan sayur dan buah yang perlu dimakan setiap tahun agar sesuai 
+                                rekomendasi WHO?</li>
+                            <div><textarea class="bagian3" id="jawaban2b" rows="10" cols="80"></textarea></div>
+                        </ul>
+                </ul>
+            </li>
+            <li><div class="bagian2">Menghitung Konsumsi Mingguan</div>
+                <ul type="circle">
+                    <li>Jika seorang siswa memutuskan untuk mengonsumsi 2 porsi sayur dan 3 porsi buah setiap hari, 
+                        dan masing-masing porsi adalah 100 gram, berapa total gram sayur dan buah yang dikonsumsinya 
+                        dalam satu minggu?.</li>
+                        <div><textarea id="jawaban3a" class="bagian3" rows="10" cols="80"></textarea></div>
+                    <li>Ubah total konsumsi mingguan tersebut ke dalam satuan kilogram.</li>
+                        <div><textarea id="jawaban3b" class="bagian3" rows="10" cols="80"></textarea></div>
+                </ul>
+            </li>
+            <li><div class="bagian2">Menghitung Kekurangan Konsumsi Sayur di Indonesia</div>
+                <ul type="circle">
+                    <li>Berdasarkan rekomendasi PBB, konsumsi sayur idealnya adalah 91,25 kg per tahun, 
+                        sedangkan rata-rata konsumsi di Indonesia hanya 40,35 kg per tahun.</li>
+                        <ul type="square">
+                            <li>Hitung berapa kilogram kekurangan konsumsi sayur di Indonesia 
+                                dibandingkan dengan rekomendasi.</li>
+                            <div><textarea class="bagian3" id="jawaban4a" rows="10" cols="80"></textarea></div>
+                            <li>Berapa gram kekurangan konsumsi sayur per hari (asumsikan 365 hari per tahun)?</li>
+                            <div><textarea class="bagian3" id="jawaban4b" rows="10" cols="80"></textarea></div>
+                        </ul>
+                    
+                </ul>
+            </li>
+            <li><div class="bagian2">Membandingkan Konsumsi Buah yang Direkomendasikan dan yang Nyata</div>
+                <ul type="circle">
+                    <li>Rekomendasi PBB menyarankan konsumsi buah sebanyak 73 kg per tahun. 
+                        Berdasarkan data, konsumsi buah di Indonesia hanya 34,55 kg per tahun.</li>
+                        <ul type="square">
+                            <li>Hitung berapa kilogram kekurangan konsumsi buah di Indonesia 
+                                dibandingkan dengan rekomendasi.</li>
+                            <div><textarea class="bagian3" id="jawaban5a" rows="10" cols="80"></textarea></div>
+                            <li>Jika kita ingin meningkatkan konsumsi buah sesuai rekomendasi, 
+                                berapa gram tambahan buah per hari yang perlu dimakan?</li>
+                            <div><textarea class="bagian3" id="jawaban5b" rows="10" cols="80"></textarea></div>
+                        </ul>
+                </ul>
+            </li>
+            <li><div class="bagian2">Estimasi Porsi yang Dibutuhkan</div>
+                <ul type="circle">
+                    <li>Dalam teks disebutkan bahwa sebaiknya kita mengonsumsi 3-5 porsi sayur 
+                        dan 2-3 porsi buah setiap hari. Jika setiap porsi sayur dan buah masing-masing
+                         adalah 100 gram:</li>
+                        <ul type="square">
+                            <li>Berapa total gram sayur dan buah yang dikonsumsi dalam satu hari jika
+                                 kita mengikuti jumlah porsi minimal?</li>
+                            <div><textarea class="bagian3" id="jawaban6a" rows="10" cols="80"></textarea></div>
+                            <li>Berapa total gram sayur dan buah yang dikonsumsi dalam satu hari jika kita 
+                                mengikuti jumlah porsi maksimal?</li>
+                            <div><textarea class="bagian3" id="jawaban6b" rows="10" cols="80"></textarea></div>
+                        </ul>
+                </ul>
+            </li>
+            <li><div class="bagian2">Menghitung Konsumsi Mingguan</div>
+                <ul type="circle">
+                    <li>Mengacu pada rekomendasi WHO (400 gram per hari), hitung berapa gram dan
+                         kilogram konsumsi sayur dan buah yang dibutuhkan dalam satu bulan (30 hari).</li>
+                        <div><textarea id="jawaban7" class="bagian3" rows="10" cols="80"></textarea></div>
+                </ul>
+            </li>
+        </ol>
+    </div>
+    <div><input type="button" value="Kirim" id="kirim1"></div>
+    <script type="module">
+        // Konfigurasi Firebase SDK
+        import {initializeApp} from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+        const firebaseConfig = {
+                apiKey: "AIzaSyCkgVmk75UTkos2y1Mrc7d3-sxShMfbeJQ",
+                authDomain: "natural-ethos-423713-e0.firebaseapp.com",
+                databaseURL: "https://natural-ethos-423713-e0-default-rtdb.firebaseio.com",
+                projectId: "natural-ethos-423713-e0",
+                storageBucket: "natural-ethos-423713-e0.firebasestorage.app",
+                messagingSenderId: "41833960811",
+                appId: "1:41833960811:web:6218d6ac2f3538c704e82e",
+        };
+
+        // Inisialisasi Firebase
+        const app = initializeApp(firebaseConfig);
+        import {getDatabase, set, get, update, remove, ref, child}
+            from "https://www.gstatic.com/firebasejs/11.0.2/firebase-database.js";
+        const db=getDatabase()
+        var kirim1 = document.getElementById("kirim1")
+        kirim1.addEventListener("click",()=>{
+            var nama = document.getElementById("nama").value
+            var kelas = document.getElementById("kelas").value
+            var soal1a = document.getElementsByClassName("pertanyaan1a")
+            var soal1b = document.getElementsByClassName("pertanyaan1b")
+            var soal2a = document.getElementsByClassName("pertanyaan2a")
+            var soal2b = document.getElementsByClassName("pertanyaan2b")
+            var soal3a = document.getElementsByClassName("pertanyaan3a")
+            var soal3b = document.getElementsByClassName("pertanyaan3b")
+            var soal4a = document.getElementsByClassName("pertanyaan4a")
+            var soal4b = document.getElementsByClassName("pertanyaan4b")
+            var soal5a = document.getElementsByClassName("pertanyaan5a")
+            var soal5b = document.getElementsByClassName("pertanyaan5b")
+            var soal6a = document.getElementsByClassName("pertanyaan6a")
+            var soal6b = document.getElementsByClassName("pertanyaan6b")
+            var soal7 = document.getElementsByClassName("pertanyaan7")
+            set(ref(db, 'buah/' + nama), { 
+                nama:nama,
+                kelas:kelas,
+            })
+                .then(() => {
+                    alert('Data added successfully');
+                })
+                .catch((error) => {
+                console.error("Error adding data:", error);
+            });
+            set(ref(db, 'buah/' + nama+'/soal'), {
+                soal1:soal1a.value,
+                soal1:soal1b.value,
+                soal2a:soal2a.value,
+                soal2b:soal2b.value,
+                soal3a:soal3a.value,
+                soal3b:soal3b.value,
+                soal4a:soal4a.value,
+                soal4b:soal4b.value,
+                soal5a:soal5a.value,
+                soal5b:soal5b.value,
+                soal6a:soal6a.value,
+                soal6b:soal6b.value,
+                soal7:soal7.value,
+            })
+                .then(() => {
+                    alert('Data added successfully');
+                })
+                .catch((error) => {
+                console.error("Error adding data:", error);
+            });
+        });
+</script>
+</body>
+</html>
+    '''
+    st.components.v1.html(tulisan_html5,width=1000,height=13000)
